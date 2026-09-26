@@ -89,14 +89,14 @@ const park = {
       title: "Black Pool",
       altText: "A visitor stands on a boardwalk near a hot spring and a lake.",
       caption: "Black Pool at the West Thumb Geyser Basin",
-      url: "../images/currentConditions.jpg"
+      url: "./images/currentConditions.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
       title: "Beehive Geyser",
       altText: "A geyser erupting.",
       caption: "The Beehive Geyser erupting.",
-      url: "../images/fees.jpg"
+      url: "./images/fees.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
@@ -142,7 +142,7 @@ const park = {
       title: "Bighorn sheep",
       altText: "Two bighorn sheep laying on the ground.",
       caption: "Two bighorn rams rest and chew their cud",
-      url: "../images/visitorCenter.jpg"
+      url: "./images/visitorCenter.jpg"
     },
     {
       credit: "NPS/Diane Renkin",
