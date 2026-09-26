@@ -65,6 +65,7 @@ const park = {
   directionsInfo:
     "Yellowstone National Park covers nearly 3,500 square miles in the northwest corner of Wyoming (3% of the park is in Montana and 1% is in Idaho). Yellowstone has five entrance stations, and several are closed to regular vehicles during winter. It takes many hours to drive between these entrances, so be sure to check the status of roads at the entrance you intend to use while planning your trip and before you arrive.",
   directionsUrl: "http://www.nps.gov/yell/planyourvisit/directions.htm",
+  
   images: [
     {
       credit: "NPS/Jim Peaco",
@@ -88,14 +89,14 @@ const park = {
       title: "Black Pool",
       altText: "A visitor stands on a boardwalk near a hot spring and a lake.",
       caption: "Black Pool at the West Thumb Geyser Basin",
-      url: "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg"
+      url: "../images/currentConditions.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
       title: "Beehive Geyser",
-      altText: "People on a wooden boardwalk watch a geyser erupt.",
-      caption: "Visitors to the Upper Geyser Basin watch Beehive Geyser erupt.",
-      url: "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg"
+      altText: "A geyser erupting.",
+      caption: "The Beehive Geyser erupting.",
+      url: "../images/fees.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
@@ -141,7 +142,7 @@ const park = {
       title: "Bighorn sheep",
       altText: "Two bighorn sheep laying on the ground.",
       caption: "Two bighorn rams rest and chew their cud",
-      url: "https://www.nps.gov/common/uploads/structured_data/3C7D95DD-1DD8-B71B-0BC4FA19BD72F0EC.jpg"
+      url: "../images/visitorCenter.jpg"
     },
     {
       credit: "NPS/Diane Renkin",
@@ -178,6 +179,28 @@ const park = {
   name: "Yellowstone",
   designation: "National Park"
 };
+
+export const parkInfoLinks = [
+  {
+    name: "Current Conditions &#x203A;",
+    link: "conditions.html",
+    image: park.images[2].url,
+    description:
+      "See what conditions to expect in the park before leaving on your trip!"
+  },
+  {
+    name: "Fees and Passes &#x203A;",
+    link: "fees.html",
+    image: park.images[3].url,
+    description: "Learn about the fees and passes that are available."
+  },
+  {
+    name: "Visitor Centers &#x203A;",
+    link: "visitor_centers.html",
+    image: park.images[9].url,
+    description: "Learn about the visitor centers in the park."
+  }
+];
 
 export function getParkData() {
   return park;
