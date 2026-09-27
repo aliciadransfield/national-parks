@@ -87,16 +87,16 @@ const park = {
     {
       credit: "NPS/Diane Renkin",
       title: "Black Pool",
-      altText: "A visitor stands on a boardwalk near a hot spring and a lake.",
-      caption: "Black Pool at the West Thumb Geyser Basin",
-      url: "./images/currentConditions.jpg"
+      altText: "Fall trees on both sides of a rocky stream.",
+      caption: "Fall trees on both sides of a rocky stream.",
+      url: "https://www.nps.gov/common/uploads/grid_builder/crop16_9/C58775A9-C067-845D-B68CF80F484EF8FA.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
       title: "Beehive Geyser",
-      altText: "A geyser erupting.",
-      caption: "The Beehive Geyser erupting.",
-      url: "./images/fees.jpg"
+      altText: "A person standing on rocks looking at the Yellowstone valley.",
+      caption: "A person standing on rocks looking at the Yellowstone valley.",
+      url: "https://www.nps.gov/common/uploads/grid_builder/crop16_9/1041962C-1DD8-B71B-0B8E77BA2E1EA0E8.jpg"
     },
     {
       credit: "NPS/Jim Peaco",
@@ -140,9 +140,9 @@ const park = {
     {
       credit: "NPS/Peggy Olliff",
       title: "Bighorn sheep",
-      altText: "Two bighorn sheep laying on the ground.",
-      caption: "Two bighorn rams rest and chew their cud",
-      url: "./images/visitorCenter.jpg"
+      altText: "An elderly couple outside looking at an informational pamphlet.",
+      caption: "An elderly couple outside looking at an informational pamphlet.",
+      url: "https://www.nps.gov/common/uploads/grid_builder/crop16_9/F3CF233A-D445-364D-EC4CD06A498E4F91.jpg"
     },
     {
       credit: "NPS/Diane Renkin",
