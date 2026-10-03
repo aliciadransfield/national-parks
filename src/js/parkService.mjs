@@ -180,7 +180,7 @@ const park = {
   designation: "National Park"
 };
 
-export const parkInfoLinks = [
+const parkInfoLinks = [
   {
     name: "Current Conditions &#x203A;",
     link: "conditions.html",
@@ -202,6 +202,53 @@ export const parkInfoLinks = [
   }
 ];
 
-export function getParkData() {
-  return park;
+// gets data using the api from the National Park Service
+const baseUrl = "https://developer.nps.gov/api/v1/";
+const apiKey = import.meta.env.VITE_NPS_API_KEY;
+
+async function getJson(url) {
+  const options = {
+    method: "GET",
+    headers: {
+      "X-Api-Key": apiKey
+    }
+  };
+  let data = {};
+  const response = await fetch(baseUrl + url, options);
+  if (response.ok) {
+    data = await response.json();
+  } 
+  else throw new Error("response not ok");
+  return data;
+}
+
+
+export function getInfoLinks(data) {
+  const withUpdatedImages = parkInfoLinks.map((item, index) => {
+    item.image = data[index + 2].url;
+    return item;
+  });
+  return withUpdatedImages;
+}
+
+// export async function getVisitorCenterData() {
+//   const options = {
+//     method: "GET",
+//     headers: {
+//       "X-Api-Key": apiKey
+//     }
+//   };
+//   let data = {};
+//   const response = await fetch(baseUrl + "visitorcenters" + "?parkCode=yell", options);
+//   // check to make sure the reponse was ok.
+//   if (response.ok) {
+//     // convert to JSON
+//     data = await response.json();
+//   } else throw new Error("response not ok");
+//   return data.data[0];
+// }
+
+export async function getParkData() {
+  const parkData = await getJson("parks?parkCode=yell");
+  return parkData.data[0];
 }
